@@ -12,23 +12,17 @@ else
     echo -n "Enter a Number :"
     read Num
 fi
-
-# First Number of the 
-# Fibonacci Series 
-a=0 
-
-# Second Number of the 
-# Fibonacci Series 
-b=1 
-
-echo "The Fibonacci series is : "
-
-for (( i=0; i<Num; i++ )) 
+x=0
+y=1
+i=2
+echo "Fibonacci Series up to $Num terms :"
+echo "$x"
+echo "$y"
+while [ $i -lt $Num ]
 do
-	echo -n "$a "
-	fn=$((a + b)) 
-	a=$b 
-	b=$fn 
+i=`expr $i + 1 `
+z=`expr $x + $y `
+echo "$z"
+x=$y
+y=$z
 done
-# End of for loop 
-
