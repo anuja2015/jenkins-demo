@@ -4,6 +4,7 @@
 # Static input fo N 
 
 #N=6 
+#!/bin/bash
 if [ $# -eq 1 ]
 then
     Num=$1
