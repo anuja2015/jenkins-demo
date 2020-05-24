@@ -2,7 +2,7 @@
 # Series
 
 # Static input fo N
-
+#!/bin/bash
 #N=6
 if [ $# -eq 1 ]
 then
