@@ -1,16 +1,9 @@
-#!/bin/bash#!/bin/bash
-# SCRIPT:  fibo_iterative.sh
-# USAGE:   fibo_iterative.sh [Number]
-# PURPOSE: Generate Fibonacci sequence.
-#                         \\\\ ////
-#                         \\ - - //
-#                            @ @
-#                    ---oOOo-( )-oOOo---
-#
-#####################################################################
-#                     Script Starts Here                            #
-#####################################################################
+# Program for Fibonacci
+# Series
 
+# Static input fo N
+
+#N=6
 if [ $# -eq 1 ]
 then
     Num=$1
@@ -19,17 +12,22 @@ else
     read Num
 fi
 
-f1=0
-f2=1
+# First Number of the
+# Fibonacci Series
+a=0
 
-echo "The Fibonacci sequences for the number $Num is : "
+# Second Number of the
+# Fibonacci Series
+b=1
 
-for (( i=0;i<=Num;i++ ))
+echo "The Fibonacci series is : "
+
+for (( i=0; i<Num; i++ ))
 do
-     echo -n "$f1 "
-     fn=$((f1+f2))
-     f1=$f2
-     f2=$fn
+        echo -n "$a "
+        fn=$((a + b))
+        a=$b
+        b=$fn
 done
+# End of for loop
 
-echo
