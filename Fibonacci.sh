@@ -3,14 +3,7 @@
 
 # Static input fo N
 #!/bin/bash
-#N=6
-if [ $# -eq 1 ]
-then
-    Num=$1
-else
-    echo -n "Enter a Number :"
-    read Num
-fi
+Num=6
 
 # First Number of the
 # Fibonacci Series
